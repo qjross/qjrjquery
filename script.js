@@ -1,3 +1,5 @@
+var n = 0
+
 $(document).ready(function() {
 
 $("h1").mouseenter(function(){
@@ -17,10 +19,16 @@ $("h2").click(function(){
 });  
     
 $("#theUnveiling").click(function(){
-   $("img").fadeIn("slow");
+   $("#fadeOne").toggle("slow");
   });
+    
+$("#jerseyUnveil").click(function(){
+   $(".charlotteQuidditch").toggle("slow");
+  });    
+    
 $("#gameAlert").hover(function(){
-    (alert)("Metal Gear Solid");
+    alert("Metal Gear Solid");
+    $(this).off();
     
     
 });    
